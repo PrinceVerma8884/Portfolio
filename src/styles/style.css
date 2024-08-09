@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Retro;
+    src: url(../../public/fonts/Retro\ Blendy.otf);
+}
+
+@font-face {
+    font-family: Hero;
+    src: url(../../public/fonts/Melbrick\ DEMO.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Retro; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(224, 234, 243);
+    background: linear-gradient(264deg, rgba(224, 234, 243, 1) 0%, rgba(207, 222, 243, 1) 100%, rgba(207, 222, 243, 1) 100%);
+}
+
+
+
+/* extra contenbt */
+
+
+.header {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    /* position: fixed; */
+    /* top: 0; */
+
+
+    /* position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease; */
+
+
+}
+
+.nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #131842;
+    font-size: 1.3rem;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* border: 2px solid black; */
+}
+
+.right span a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.right span {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fffce4;
+    border: 1px solid black;
+    font-size: 1.5rem;
+
+}
+
+.right span:hover {
+    cursor: pointer;
+
+}
+
+.header h1 {
+    font-size: 2rem;
+    flex-shrink: 1;
+}
+
+
+
+
+/* main css */
+
+.main {
+    /* border: 2px solid black; */
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 50%;
+    /* overflow: auto; */
+    line-height: 80px;
+
+
+}
+
+.photo {
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo .mypho {
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: rgba(54, 164, 255, 0.8) 0 0 90px 33px;
+
+}
+
+
+
+.photo .mypho img {
+    width: 450px;
+    height: 450px;
+    /* width: 30rem;
+    height: 30rem; */
+    mix-blend-mode: multiply;
+
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 15px;
+    /* padding: 20px; */
+    margin-left: 1px;
+    margin-top: 20px;
+
+}
+
+.text-3 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+
+
+/* about section */
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* about section */
+.headingTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutContent{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    
+}
+
+.leftPhoto{
+    width: 40%;
+    height: 70vh;
+    border: 2px solid black;
+}
+.rightContent{
+    width: 40%;
+    height: 70vh;
+    border: 2px solid black;
+
+}
+
